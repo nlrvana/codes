@@ -1,0 +1,24 @@
+.page {
+  position: relative;
+  @extend %page-style;
+
+  .content {
+    [id] {
+      scroll-margin-top: var(--#{$prefix}scroll-mt);
+    }
+  }
+
+  @include blur;
+}
+.img{
+  margin: 3rem auto;
+  display: block;
+  text-align: center;
+}
+@import '_single';
+@import '_special';
+@import '_archive';
+@import '_home';
+@import '_404';
+@import '_offline';
+@import '_friends';
